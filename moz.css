@@ -1,0 +1,3 @@
+body {
+  -moz-binding: url(script.xml#mycode);
+}
